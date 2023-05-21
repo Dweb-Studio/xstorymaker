@@ -1,0 +1,57 @@
+/* 隐藏谷歌浏览器的滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 隐藏火狐浏览器的滚动条 */
+::-moz-scrollbar {
+  display: none;
+}
+
+/* 隐藏IE浏览器的滚动条 */
+::-ms-scrollbar {
+  display: none;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-xy-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.column {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.swal-modal {
+  color: #fff!important;
+  background-color: #313b46!important;
+}
+.swal-title {
+  color: #fff!important;
+}
+.swal-text {
+  color: #fff!important;
+}
+
+
+
