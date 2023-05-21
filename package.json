@@ -1,7 +1,7 @@
 {
   "name": "xstorymaker",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "dweb-ui": "^0.5.0",
     "sweetalert": "^2.1.2",
     "vue": "^3.2.47",
     "vuex": "^4.0.2"
@@ -19,5 +20,15 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vue-tsc": "^1.4.2"
-  }
+  },
+  "homepage": "https://github.com/Dweb-Studio/xstorymaker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dweb-Studio/xstorymaker"
+  },
+  "bugs": {
+    "url": "https://github.com/Dweb-Studio/xstorymaker/issues"
+  },
+  "author": "Dweb",
+  "license": "MIT"
 }
