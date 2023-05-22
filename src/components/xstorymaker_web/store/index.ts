@@ -1,8 +1,8 @@
 import axios from "axios";
-
 import { InjectionKey } from "vue";
-import { Store, createStore } from "vuex";
 import { DwebCanvas } from "../Xstory_Preview/dwebcanvas/DwebCanvas";
+
+import { createStore,Store } from "vuex"
 
 
 export const XstoryComponentStoreKey: InjectionKey<Store<SceneData>> = Symbol("XstoryStore");
@@ -209,7 +209,9 @@ export const XstoryStore = createStore<SceneData>({
     async openAiChat(context, message: ChatMessage) {
       let result = 0
       let api_key = context.state.pluginAbilitys.openAi.apikey
+
       let messageList = context.state.pluginAbilitys.openAi.chat.messages
+
       context.commit("pushOpenAiChatMessage", message)
       const options = {
         method: 'post',
@@ -255,8 +257,6 @@ export const XstoryStore = createStore<SceneData>({
 
       return result
     },
-
-
     //openai api: completions
     async openAiCompletions(context, params: { prompt: string }) {
       let result = 0
